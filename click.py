@@ -37,7 +37,7 @@ print(f"Attacks have started.\n\n")
 while total < goal:
     # open the form
     driver.get(URL)
-
+ 
     # wait for element to load
     # try:
     #     element_present = EC.presence_of_element_located((By.CLASS_NAME, 'quantumWizTogglePaperradioOffRadio'))
