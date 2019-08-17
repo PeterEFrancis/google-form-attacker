@@ -37,25 +37,20 @@ print(f"Attacks have started.\n\n")
 while total < goal:
     # open the form
     driver.get(URL)
- 
+
     # wait for element to load
-    # try:
-    #     element_present = EC.presence_of_element_located((By.CLASS_NAME, 'quantumWizTogglePaperradioOffRadio'))
-    #     WebDriverWait(driver, 10).until(element_present)
-    # except selenium.common.exceptions.TimeoutException:
-    #     continue
+    try:
+        element_present = EC.presence_of_element_located((By.TAG_NAME, 'body'))
+        WebDriverWait(driver, 10).until(element_present)
+    except selenium.common.exceptions.TimeoutException:
+        continue
     time.sleep(1)
 
     # Click the first selection
     driver.find_elements_by_class_name('quantumWizTogglePaperradioOffRadio')[0].click()
 
-    # wait for element to load
-    # try:
-    #     element_present = EC.presence_of_element_located((By.CLASS_NAME, 'quantumWizButtonPaperbuttonFlat'))
-    #     WebDriverWait(driver, 10).until(element_present)
-    # except selenium.common.exceptions.TimeoutException:
-    #     continue
-    time.sleep(1)
+    # wait
+    time.sleep(.5)
 
     # Click the submit
     driver.find_element_by_class_name('quantumWizButtonPaperbuttonFlat').click()
