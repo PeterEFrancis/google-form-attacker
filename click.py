@@ -40,7 +40,7 @@ while total < goal:
 
     # wait for element to load
     try:
-        element_present = EC.presence_of_element_located((By.TAG_NAME, 'body'))
+        element_present = EC.presence_of_element_located((By.CLASS_NAME, 'quantumWizTogglePaperradioOffRadio'))
         WebDriverWait(driver, 10).until(element_present)
     except selenium.common.exceptions.TimeoutException:
         continue
@@ -49,8 +49,13 @@ while total < goal:
     # Click the first selection
     driver.find_elements_by_class_name('quantumWizTogglePaperradioOffRadio')[0].click()
 
-    # wait
-    time.sleep(.5)
+    # wait for element to load
+    try:
+        element_present = EC.presence_of_element_located((By.CLASS_NAME, 'quantumWizButtonPaperbuttonFlat'))
+        WebDriverWait(driver, 10).until(element_present)
+    except selenium.common.exceptions.TimeoutException:
+        continue
+    time.sleep(1)
 
     # Click the submit
     driver.find_element_by_class_name('quantumWizButtonPaperbuttonFlat').click()
