@@ -7,6 +7,11 @@ To run,
  > `python click.py`
 3. Follow Instructions you see in the command line.
 
+_____
+
+Here is a fake google form to attack: https://docs.google.com/forms/d/e/1FAIpQLScwZ1ra91WcSUCjG10OSp-kUNrFVoa-rnsjB3coKQH4h30d_Q/viewform?usp=sf_link
+
+and you can check that your attacks are going through here: https://docs.google.com/spreadsheets/d/13dFNq2y0SEHhOIeXvEWYCLDVlldsYwR_ztr08EIbsqs/edit?usp=sharing
 
 _____
 
@@ -17,6 +22,3 @@ This requires Safari with the developer menu enabled:
 
 To use with a different browser, change the webDriver.
 
-Here is a fake google form to attack: https://docs.google.com/forms/d/e/1FAIpQLScwZ1ra91WcSUCjG10OSp-kUNrFVoa-rnsjB3coKQH4h30d_Q/viewform?usp=sf_link
-
-and you can check that your attacks are going through here: https://docs.google.com/spreadsheets/d/13dFNq2y0SEHhOIeXvEWYCLDVlldsYwR_ztr08EIbsqs/edit?usp=sharing
