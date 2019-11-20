@@ -1,5 +1,12 @@
 # google-form-attacker
 
+To run,
+1. Navigate to the repository.
+ > `cd path/to/repository/google-form-attacker`
+2. Run Python file.
+ > `python click.py`
+3. Follow Instructions you see in the command line.
+
 This requires Safari with the developer menu enabled:
 
 1. Safari > Preferences > Advanced > Show Develop menu in menu bar
