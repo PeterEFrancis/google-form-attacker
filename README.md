@@ -7,6 +7,9 @@ To run,
  > `python click.py`
 3. Follow Instructions you see in the command line.
 
+
+_____
+
 This requires Safari with the developer menu enabled:
 
 1. Safari > Preferences > Advanced > Show Develop menu in menu bar
